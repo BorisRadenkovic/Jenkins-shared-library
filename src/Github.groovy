@@ -1,0 +1,6 @@
+class Github {
+
+    def clone() {
+
+    }
+}
