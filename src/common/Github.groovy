@@ -1,15 +1,18 @@
 package common
 
-class Github {
+//class Github {
 
-    def params = [branch: 'master', credentials: 'MyGithub']
+   // def params = [branch: 'master', credentials: 'MyGithub']
 
-    def clone() {
+    def clone(repoUrl) {
 
      //echo "${repoUrl}"
       // echo repoUrl
 
-        git branch: params.branch, credentialsId: params.credentials, url: 'https://github.com/brki18/devops_web_goat'
+      //  git branch: params.branch, credentialsId: params.credentials, url: 'https://github.com/brki18/devops_web_goat'
 //git branch: params.branch, params.credentials, url: 'https://github.com/brki18/devops_web_goat'
-    }
+   // }
+
+        git url: "https://github.com/brki18/${repoUrl}"
 }
+return this
