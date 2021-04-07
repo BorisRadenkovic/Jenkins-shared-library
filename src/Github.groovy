@@ -5,7 +5,7 @@ class Github {
         brench: 'master',
         credentials: 'MyGithub'
     ]
-    def clone() {
+    def clone(String repoUrl) {
 
        // echo "${repoUrl}"
 
