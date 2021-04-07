@@ -1,5 +1,6 @@
 def cleanInstall () {
-
-echo "cistim i instaliram"
-
+echo "Starting clean & install"
+  
+sh "mvn clean install -DskipTests"
+  echo "Cean and install finished"
 }
