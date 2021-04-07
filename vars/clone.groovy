@@ -1,7 +1,8 @@
+import common.Github
 
-def cloneRepo() {
+static def cloneRepo() {
 
     Github github = new Github()
-    github.clone()
+    github.clone('kloniranje')
 
 }
