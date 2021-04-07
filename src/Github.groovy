@@ -2,7 +2,7 @@ class Github {
 
     def params = [
         
-        brench: 'master',
+        branch: 'master',
         credentials: 'MyGithub'
     ]
     def clone() {
