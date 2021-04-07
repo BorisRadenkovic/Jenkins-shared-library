@@ -4,9 +4,9 @@ class Github {
 
     def params = [branch: 'master', credentials: 'MyGithub']
 
-    def clone(String repoUrl) {
+    def clone() {
 
-     echo "${repoUrl}"
+     //echo "${repoUrl}"
       // echo repoUrl
 
         git branch: params.branch, credentialsId: params.credentials, url: 'https://github.com/brki18/devops_web_goat'
