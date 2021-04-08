@@ -1,6 +1,6 @@
 class GitManager {
 
-    static void clone(Script scriptRef, String gitURLString, String branchID, String gitUserID)
+    static void clone(Script scriptRef, String gitURLString, String branchID, String MyGithub)
     {
         scriptRef.checkout([
                 $class: 'GitSCM',
@@ -8,7 +8,7 @@ class GitManager {
                 doGenerateSubmoduleConfigurations: false,
                 extensions: [[$class: 'CleanCheckout']],
                 submoduleCfg: [],
-                userRemoteConfigs: [[credentialsId: gitUserID, url: gitURLString]]
+                userRemoteConfigs: [[credentialsId: MyGithub, url: gitURLString]]
         ])
     }
 }
