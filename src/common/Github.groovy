@@ -2,7 +2,7 @@ package common
 
 class Github {
 
-    def params = [branch: 'master', credentials: 'MyGithub']
+   // def params = [branch: 'master', credentials: 'MyGithub']
     def context
     //def clone(String repoUrl) {
 
